@@ -599,10 +599,6 @@ video {
   margin-left: auto;
 }
 
-.mt-8{
-  margin-top: 2rem;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
@@ -688,6 +684,10 @@ video {
 
 .gap-8{
   gap: 2rem;
+}
+
+.overflow-y-hidden{
+  overflow-y: hidden;
 }
 
 .scroll-smooth{
