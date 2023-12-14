@@ -615,12 +615,12 @@ video {
   display: grid;
 }
 
-.h-2{
-  height: 0.5rem;
+.h-12{
+  height: 3rem;
 }
 
-.h-24{
-  height: 6rem;
+.h-2{
+  height: 0.5rem;
 }
 
 .h-9{
@@ -629,18 +629,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-12{
-  height: 3rem;
-}
-
-.h-6{
-  height: 1.5rem;
-}
-
-.w-3\/5{
-  width: 60%;
 }
 
 .w-4\/5{
@@ -724,6 +712,11 @@ video {
   padding: 1rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -734,19 +727,9 @@ video {
   line-height: 1;
 }
 
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -806,14 +789,6 @@ video {
   transition-duration: 150ms;
 }
 
-.transition{
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 * {
   font-family: "Nunito Sans", sans-serif;
 }
@@ -824,20 +799,6 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:h-24{
-    height: 6rem;
-  }
-
-  .sm\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .sm\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .sm\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -849,19 +810,6 @@ video {
     display: flex;
   }
 
-  .md\:h-24{
-    height: 6rem;
-  }
-
-  .md\:h-16{
-    height: 4rem;
-  }
-
-  .md\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -869,15 +817,6 @@ video {
 }
 
 @media (min-width: 1024px){
-  .lg\:h-24{
-    height: 6rem;
-  }
-
-  .lg\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .lg\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
@@ -889,19 +828,7 @@ video {
     height: 6rem;
   }
 
-  .xl\:text-7xl{
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-}
-
-@media (min-width: 1536px){
-  .\32xl\:h-24{
-    height: 6rem;
-  }
-
-  .\32xl\:text-8xl{
-    font-size: 6rem;
-    line-height: 1;
+  .xl\:w-3\/5{
+    width: 60%;
   }
 }
