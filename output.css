@@ -587,6 +587,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .ml-6{
   margin-left: 1.5rem;
 }
@@ -595,8 +599,12 @@ video {
   margin-left: auto;
 }
 
-.mb-8{
-  margin-bottom: 2rem;
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
 }
 
 .block{
@@ -664,10 +672,6 @@ video {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-2{
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .grid-rows-1{
