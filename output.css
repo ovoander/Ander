@@ -631,6 +631,18 @@ video {
   height: 100vh;
 }
 
+.h-24{
+  height: 6rem;
+}
+
+.h-8{
+  height: 2rem;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
 .w-4\/5{
   width: 80%;
 }
@@ -737,6 +749,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -803,13 +820,66 @@ video {
     display: flex;
   }
 
+  .md\:h-1{
+    height: 0.25rem;
+  }
+
+  .md\:h-16{
+    height: 4rem;
+  }
+
+  .md\:h-8{
+    height: 2rem;
+  }
+
+  .md\:h-7{
+    height: 1.75rem;
+  }
+
+  .md\:h-\[\]{
+    height: ;
+  }
+
+  .md\:h-\[1\]{
+    height: 1;
+  }
+
+  .md\:h-\[1\.\]{
+    height: 1.;
+  }
+
+  .md\:h-\[1\.8\]{
+    height: 1.8;
+  }
+
+  .md\:h-\[1\.87t\]{
+    height: 1.87t;
+  }
+
+  .md\:h-\[1\.875rem\]{
+    height: 1.875rem;
+  }
+
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
   }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 1024px){
+  .lg\:h-24{
+    height: 6rem;
+  }
+
+  .lg\:h-9{
+    height: 2.25rem;
+  }
+
   .lg\:w-3\/5{
     width: 60%;
   }
@@ -817,6 +887,11 @@ video {
   .lg\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
