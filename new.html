@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
         />
         <meta charset="UTF-8" />
@@ -38,44 +38,33 @@
         />
         <title>Ander</title>
     </head>
-    <script>
-        if (
-            localStorage.theme === "dark" ||
-            (!("theme" in localStorage) &&
-                window.matchMedia("(prefers-color-scheme: dark)").matches)
-        ) {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
-
-        localStorage.theme = "light";
-
-        localStorage.theme = "dark";
-
-        localStorage.removeItem("theme");
-
-        const toggleTheme = () => {
-            if (localStorage.theme === "dark") {
-                localStorage.theme = "light";
-            } else {
-                localStorage.theme = "dark";
-            }
-            document.documentElement.classList.toggle("dark");
-        };
-
-        const setThemeOnLoad = () => {
-            const savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "dark") {
-                document.documentElement.classList.add("dark");
-            } else if (savedTheme === "light") {
-                document.documentElement.classList.remove("dark");
-            }
-        };
-
-        setThemeOnLoad();
-    </script>
-    <body
-        class="scroll-smooth bg-zinc-100 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100"
-    ></body>
+    <body class="scroll-smooth bg-zinc-800 text-white">
+        <div
+            class="top-0 flex h-16 items-center bg-zinc-700 p-3 shadow-black/30 2xl:top-3 2xl:m-3 2xl:rounded-lg 2xl:shadow-lg"
+        >
+            <a class="text-4xl font-bold" href="">Ander</a>
+            <a
+                class="ml-auto rounded-full p-2 transition-[background-color] hover:bg-zinc-600"
+                href="https://github.com/ovoander"
+                target="_blank"
+                title="GitHub"
+            >
+                <img class="h-8" src="icons/github.svg" alt="invertocat logo" />
+            </a>
+        </div>
+        <div class="flex h-screen items-center justify-center">
+            <div class="mb-32 select-none text-3xl font-bold 2xl:text-6xl">
+                <span
+                    >Hey, I'm
+                    <a
+                        class="text-red-400 underline"
+                        href="https://github.com/ovoander"
+                        target="_blank"
+                        title="GitHub"
+                        >Ander</a
+                    >.
+                </span>
+            </div>
+        </div>
+    </body>
 </html>
