@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="output.css" />
+        <link rel="icon" href="icons/logo.svg" type="image/svg+xml" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900&display=swap"
+            rel="stylesheet"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:url" content="https://ovoander.github.io/Ander/" />
+        <meta property="og:title" content="Ander" />
+        <meta
+            property="og:description"
+            content="My personal website where you can find general information on me and some of my coding projects."
+        />
+        <meta
+            property="og:image"
+            content="https://ovoander.github.io/Ander/images/coverImage.jpeg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="ovoander.github.io/Ander" />
+        <meta
+            property="twitter:url"
+            content="https://ovoander.github.io/Ander/"
+        />
+        <meta name="twitter:title" content="Ander" />
+        <meta
+            name="twitter:description"
+            content="My personal website where you can find general information on me and some of my coding projects."
+        />
+        <meta
+            name="twitter:image"
+            content="https://ovoander.github.io/Ander/images/coverImage.jpeg"
+        />
+        <title>Ander</title>
+    </head>
+    <script>
+        if (
+            localStorage.theme === "dark" ||
+            (!("theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+
+        localStorage.theme = "light";
+
+        localStorage.theme = "dark";
+
+        localStorage.removeItem("theme");
+
+        const toggleTheme = () => {
+            if (localStorage.theme === "dark") {
+                localStorage.theme = "light";
+            } else {
+                localStorage.theme = "dark";
+            }
+            document.documentElement.classList.toggle("dark");
+        };
+
+        const setThemeOnLoad = () => {
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "dark") {
+                document.documentElement.classList.add("dark");
+            } else if (savedTheme === "light") {
+                document.documentElement.classList.remove("dark");
+            }
+        };
+
+        setThemeOnLoad();
+    </script>
+    <body
+        class="scroll-smooth bg-zinc-100 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100"
+    ></body>
+</html>
